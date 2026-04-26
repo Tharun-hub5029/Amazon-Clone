@@ -1,0 +1,80 @@
+.payment-summary {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+    padding-bottom: 5px;
+    background-color: white;
+  }
+
+  @media (max-width: 1000px) {
+    .payment-summary {
+      grid-row: 1;
+      margin-bottom: 12px;
+    }
+  }
+
+
+  .payment-summary-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .payment-summary-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+
+
+  .payment-summary-money {
+    text-align: right;
+  }
+  
+  .subtotal-row .payment-summary-money {
+    border-top: 1px solid rgb(222, 222, 222);
+  }
+  
+  .subtotal-row div {
+    padding-top: 9px;
+  }
+  
+  .total-row {
+    color: rgb(177, 39, 4);
+    font-weight: 700;
+    font-size: 18px;
+  
+    border-top: 1px solid rgb(222, 222, 222);
+    padding-top: 18px;
+  }
+  
+  .place-order-button {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+  
+    margin-top: 11px;
+    margin-bottom: 15px;
+  }
+
+  .button-primary {
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  }
+  
+  .button-primary:hover {
+    background-color: rgb(247, 202, 0);
+    border: 1px solid rgb(242, 194, 0);
+  }
+  
+  .button-primary:active {
+    background: rgb(255, 216, 20);
+    border-color: rgb(252, 210, 0);
+    box-shadow: none;
+  }

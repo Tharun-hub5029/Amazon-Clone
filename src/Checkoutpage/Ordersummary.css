@@ -1,0 +1,127 @@
+.delivery-option {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+
+
+  .delivery-option-input {
+    margin-left: 0px;
+    cursor: pointer;
+  }
+  
+  .delivery-option-date {
+    color: rgb(0, 118, 0);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  
+  .delivery-option-price {
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+  }
+
+  .cart-item-container {
+    margin-bottom: 12px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+    background-color: white;
+  }
+
+  .delivery-date {
+    color: rgb(0, 118, 0);
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+  }
+
+  .cart-item-details-grid {
+    display: grid;
+    /* 100px 1fr 1fr; means the 2nd and 3rd column will
+       take up half the remaining space in the grid
+       (they will divide up the remaining space evenly). */
+    grid-template-columns: 100px 1fr 1fr;
+    column-gap: 25px;
+  }
+
+  @media (max-width: 1000px) {
+    .cart-item-details-grid {
+      grid-template-columns: 100px 1fr;
+      row-gap: 30px;
+    }
+  }
+
+  .checkout-product-image {
+    max-width: 100%;
+    max-height: 120px;
+  
+    /* margin-left: auto;
+       margin-right auto;
+       Is a trick for centering an element horizontally
+       without needing a container. */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .checkout-product-name {
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .checkout-product-price {
+    color: rgb(177, 39, 4);
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  
+  .product-quantity .link-primary {
+    margin-left: 3px;
+  }
+  .link-primary {
+    color: rgb(1, 124, 182);
+    cursor: pointer;
+  }
+  
+  .link-primary:hover {
+    color: rgb(196, 80, 0);
+  }
+
+
+  .update-quantity-link{
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .delete-quantity-link{
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+
+  @media (max-width: 1000px) {
+    .delivery-options {
+      /* grid-column: 1 means this element will be placed
+         in column 1 in the grid. (Normally, the column that
+         an element is placed in is determined by the order
+         of the elements in the HTML. grid-column overrides
+         this default ordering).
+         
+         / span 2 means this element will take up 2 columns
+         in the grid (Normally, each element takes up 1
+         column in the grid). */
+      grid-column: 1 / span 2;
+    }
+  }
+
+  .delivery-options-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+
+
+
